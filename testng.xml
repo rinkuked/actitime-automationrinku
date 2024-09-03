@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="actitime-automation" verbose="1">
+    <test name="Regression1" parallel="classes" thread-count="2">
+
+
+
+        <parameter name=" browser" value="google"/>
+        <parameter name=" username" value="u1"/>
+
+        <classes>
+
+            <class name="com.actitimeautomation.sample.RegressionTestGroup"/>
+            <class name="com.actitimeautomation.sample.sanityTestGroup"/>
+        </classes>
+    </test>
+
+
+    <test name="deepa"  parallel="classes" thread-count="2">
+<!--        <groups>-->
+
+<!--            <run>-->
+<!--                <include name="rinku"/>-->
+        <classes>
+
+            <class name="com.actitimeautomation.sample.RegressionTestGroup"/>
+            <class name="com.actitimeautomation.sample.sanityTestGroup"/>
+        </classes>
+<!--            </run>-->
+<!--        </groups>-->
+        <classes>
+
+            <class name="com.actitimeautomation.sample.RegressionTestGroup"/>
+            <class name="com.actitimeautomation.sample.sanityTestGroup"/>
+        </classes>
+    </test>
+
+
+
+</suite>
